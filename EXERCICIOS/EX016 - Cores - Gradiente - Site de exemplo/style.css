@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    /* Definir que a cor será um degradê da direita para a esquerda */
+    background-image: linear-gradient(to right, #025940, #04BF8A);
+}
+
+main{
+
+    /* Cor da caixa de texto */
+    background-color: white;
+
+    /* Arredondamento da borda da caixa de texto */
+    border-radius: 10px;
+
+    /* Sobras para o lado, para baixo e o espalhamento da sombra */
+    box-shadow: 5px 5px 15px #224150a8;
+
+    /* Largura */
+    width: 600px;  
+    
+    /* Acolchoamento ou um espaço na borda da caixa */
+    padding: 10px;
+
+    /* Para centralizar a caixa de texto */
+    margin: auto;
+
+}
+
+h1{
+    color: #024059;
+    text-align: justify;
+    text-shadow: 1px 1px 2px #012330b2
+}
+
+h2{
+    color: #026873;
+
+}
+
+p{
+    text-align: justify;
+}

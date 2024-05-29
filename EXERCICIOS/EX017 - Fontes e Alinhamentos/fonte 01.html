@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body{
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+
+            /*Medidas absolutas:
+            cm, mm, in(Polegada), px(OFICIALMENTE MAIS RECOMENDADO), pt(Ponto), pc(Paica)
+
+            Medidas relativas:
+            em(OFICIALMENTE MAIS RECOMENDADO - É o tamanho natural da fonte), ex(Altura do X), rem(Altura relativa do M), vw, vh, %*/
+
+            font-size: 1em;/*Tamanho*/
+
+            /*text-decoration: underline;*/  /*Sublinhado*/
+
+            /* Weight(Peso), Width(Largura), Height(Altura)*/
+
+            /*Lighter(Mais leve/Fina), Normal(NPadrão), Bold(Mais pesada/Grossa), Bolder(Mais pesada ainda/Bem grossa)*/
+        }
+
+        h1{
+            /*Shorthando font
+            Isto é um atalho pra facilitar a sua vida.
+            - font-style -> font-weight -> font-size -> font-family*/
+
+            /*font-family: 'Work Sans', sans-serif;*/
+
+            /*font-weight:bolder;*/ /*Há uma variação de 100 a 900, porém nem todas as fontes possuem essa capacidade.*/
+
+            /*font-size: 3em;*/
+
+            /*font-style: italic;*/ /*Pode ser 'Normal' ou 'Italic'*/
+
+            font: italic bolder 3em 'Work Sans, sans-serif'; 
+        
+        }
+        
+        h2{
+            /*font-family: 'Times New Roman', Times, serif;*/
+
+            font: bold 2em 'Work Sans';
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quos nam deserunt quod consequuntur laboriosam maiores consequatur dolore. In dolorem reprehenderit quod totam reiciendis at dolor, dolore odit. Modi, incidunt!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit voluptatum dolor consectetur eligendi tenetur aliquam, deleniti distinctio molestiae non odio nihil excepturi quia magni esse commodi natus unde officia tempore?</p>
+
+    <h2>Subtítulo do exercício</h2>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse voluptas accusamus eos quas ipsa placeat illo saepe voluptate. Blanditiis et sunt sapiente est corrupti ipsam tempore quae dolore velit recusandae!</p>
+</body>
+</html>

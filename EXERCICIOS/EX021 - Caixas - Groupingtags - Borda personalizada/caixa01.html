@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+
+            /*INLINE-LEVEL:*/
+        h1{
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            
+            /* PODE SER SUBSTITUIDO PELO QUE TEM ABAIXO
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;*/
+
+            border: 10px solid darkslategray;
+
+            /* PODE SER SUBSTITUIDO PELO QUE TEM ABAIXO
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px; */
+
+            /*padding: 10px 10px 10px 10px;  
+            E SE FOREM TODOS OS LADO IGUAIS, PODE COLOCAR SÓ UMA VEZ QUE JÁ FUNCIONA. */
+
+            padding: 10px;
+
+            /* PODE SER SUBSTITUIDO PELO QUE TEM ABAIXO
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px; */
+
+            /*margin: auto; */ /*Para cetralizar a caixa automaticamente em qualquer navegador*/
+
+            margin: 20px 20px 40px 20px;
+
+            /* PODE SER SUBSTITUIDO PELO QUE TEM ABAIXO
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon; */
+
+            outline: 5px dashed salmon;
+        }
+ 
+             /*INLINE-LEVEL:*/
+        a{
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de  caixa inline-level</a>. vamos ver como tudo isso funciona.</p>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+
+    <h1>Outras formatações</h1>
+
+    <h2>Código-fonte / Pré-formatação</h2>
+
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em lingugem Javascript.</p>
+
+    <p> A tag &lt;code&gt; Serve para deixar o espaçamento entre as letras iguais, isto é, todas as letras ocupam o mesmo tamanho de espaço e o texto fica mais bonito (Bom para mostrar códigos)</p>
+    
+    <pre>
+        <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número {num} é ÍMPAR')
+    print('Fim do programa')
+        </code>
+    </pre>
+
+    <h2>Citações simples</h2>
+    <p>Comoo diria um pai de um amigo: <q>O computador é um burro muito rápido</q></p>
+
+    <!-- A tag <q> coloca coloca aspas, mas não são simples aspas, o site entende que ali há uma citação de verdade. -->
+
+    <h2>Citações completas</h2>
+    <p>Segundo Jeff Nobel, no seu livro HTML para leigos:</p>
+
+    <blockquote cite= "https://books.google.com.br/books?id=E8ZtDwAAQBAJ&newbks=0&hl=pt-BR&source=newbks_fb&redir_esc=y">A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.</blockquote>
+
+    <!-- A tag <blockquote> serve para sfazer sitações em bloco e ao adicionar o "cite= URL" o site terá conhecimento do livro que vc está citando-->
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading style sheets">CSS</abbr>. Estou adorando!</p>
+
+    <!-- A tag <abbr> Serve para vc colocar uma descrição na abreviação de alguma palavra, nesse caso, ao passar o cursor em cima de HTML e CSS, aparecerá o siginficado dessas palavras (Você escreve o o significado ao utilizar a tag)-->
+
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
+
+    <!-- A tag <bdo> serve para reescrever o texto ao contrário, não é muito útil, mas vai que u dia vc precise..., vc pode querer escrever da esquerda para a direita (ltr) ou da direita para esquerda (rtl) -->
+
+
+</body>
+</html>

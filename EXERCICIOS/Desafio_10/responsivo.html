@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste da responsividade</title>
+
+    <style>
+        body{
+            background-color: gray;
+        }
+
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            /*AQUI ESTAMOS DEIFININDO O OS VALORES MÍNIMO E MÁXIMO DAS BORDAS PARA QUE O SITE SEJA RESPONSIVO*/
+            min-width: 320px;  /*TAMANHO DE UMA BORDA DE CELULAR ANTIGO*/
+            max-width: 800px;  /*TAMANHO RASOÁVEL DE TELA*/
+            margin: auto;  /*PARA A CAIXA DE TEXTO SEMPRE FICAR CENTRALIZADA*/
+        }
+
+        img{
+            width: 100%; /*PARA A IMAGEM DA IRINA FICAR SE ADAPTANDO À TELA JUNTO COM A CAIXA DE TEXTO*/
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsiviade</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil commodi praesentium atque vero ipsa quaerat iure ea, maiores nostrum voluptatibus accusamus, dicta maxime corporis suscipit ad eaque incidunt totam earum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia vero repudiandae doloremque? Porro molestiae dolores sint repellat sequi velit perferendis earum dolor deserunt, officia quae laboriosam error aperiam ad dignissimos? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, qui nemo accusamus distinctio eveniet omnis ducimus quidem exercitationem, ipsam unde sint inventore reiciendis necessitatibus? Dolorem dicta quia praesentium voluptas eligendi?</p>
+
+        /*AQUI NÓS ENVELOPAMOS A IMAGEM EM PICTURE E ACRESCENTAMOS O SOURCE MEDIA PARA DEFIFINIR O TAMANHO MÁXIMO DA IMAGEM MAIOR, ASSIM QUE PASSAR DESSE VALOR ALTERARÁ PARA A IMAGEM MENOR*/
+        <picture>
+            <source media="(max-width: 800px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique corrupti minima, molestiae consequatur repellat cupiditate a. Vel reprehenderit debitis, quasi perspiciatis eius perferendis atque commodi inventore a natus illo non.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur perferendis sed labore voluptatibus minima ducimus, rem saepe soluta nostrum excepturi vitae cumque sit assumenda rerum tenetur, ab beatae. Assumenda, sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus saepe aliquid non vero modi magnam eaque cumque dicta id. Quas ullam enim molestias mollitia! Repellat dolor deserunt qui nobis consectetur?</p>
+    </main>
+</body>
+</html>
