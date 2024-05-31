@@ -7,27 +7,43 @@
     <style>
         body{
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
-            background-position: center top;
-            background-repeat: no-repeat;
-            background-size: cover;
+            background-position: center center;
+            background-repeat: repeat-y;
+            background-attachment: fixed; A IMAGEM FICA FIXA MESMO SE VOCÊ ROLAR PARA BAIXO*/
+            background-size: cover; 
+
             /*
             PODEMOS UTILIZAR 4 MODOS DE "background-size":
 
             - auto: PADRÃO;
 
             - contain: EXIBE TODA A IMAGEM, PORÉM, DEPENDENDO DO TAMANHO DA IMAGEM, A PÁGINA FICARÁ COM BORDAS  DA COR DEFINIDA NO "background-color";
-            
+
             - cover: NÃO  EXIBE TODA A IMAGEM, MAS ADAPTA ELA DE ACORDO COM O TAMANHO DO MONITOR, TENTANDO MOSTRAR O MÁXIMO POSSÍVEL DA IMAGEM;
 
             -  PODEMOS TBM UTILIZAR PORCENTAGENS PERSONALIDAS, POR EXEMPLO:
             background-size: 100% 100%;
             */
+
+            /*
+            SOBRE O "background-attachment":
+            TAMBÉM PODEMOS UTILIZAR O "scroll", ISTO É, QUANDO VOCÊ ROLAR A TELA PARA BAIXO A IMAGEM ROLARÁ TAMBÉM
+            */
+
+            /*
+            SHORTHAND - BACKGROUND:
+            color > image > position > repeat > [size] > attachment
+            A REGRA É ESSA, MAS AINDA NÃO FUNCIONA PRO COVER
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center repeat-y fixed;
         }
+        
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -43,6 +59,8 @@
 <body>
     <main>
         <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quia illum corrupti iure iusto, ex reprehenderit maxime quas modi ipsa cum nesciunt nam, ipsam deleniti nisi, earum possimus quos explicabo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus impedit, voluptatibus omnis reiciendis magni, ratione dolorem nemo maiores iusto corrupti iste id ipsum! Incidunt ad et fugiat aut sapiente consectetur! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi tenetur recusandae, eaque voluptates dolorum quibusdam? Voluptas, tempore reprehenderit. Rem similique nemo voluptatum odio quia et minus doloremque deleniti impedit modi?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quia illum corrupti iure iusto, ex reprehenderit maxime quas modi ipsa cum nesciunt nam, ipsam deleniti nisi, earum possimus quos explicabo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus impedit, voluptatibus omnis reiciendis magni, ratione dolorem nemo maiores iusto corrupti iste id ipsum! Incidunt ad et fugiat aut sapiente consectetur! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi tenetur recusandae, eaque voluptates dolorum quibusdam? Voluptas, tempore reprehenderit. Rem similique nemo voluptatum odio quia et minus doloremque deleniti impedit modi?</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quia illum corrupti iure iusto, ex reprehenderit maxime quas modi ipsa cum nesciunt nam, ipsam deleniti nisi, earum possimus quos explicabo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus impedit, voluptatibus omnis reiciendis magni, ratione dolorem nemo maiores iusto corrupti iste id ipsum! Incidunt ad et fugiat aut sapiente consectetur! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi tenetur recusandae, eaque voluptates dolorum quibusdam? Voluptas, tempore reprehenderit. Rem similique nemo voluptatum odio quia et minus doloremque deleniti impedit modi?</p>
     </main>
 </body>
