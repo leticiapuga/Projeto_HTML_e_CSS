@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #conteiner{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%; /*PARA A IMAGEM PREENCHER TODA A TELA*/
+
+            position: relative; /*O QUE CONTÉM DEVE FICAR COM A POSIÇÃO RELATIVA*/
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+
+            position: absolute; /*O QUE É CONTIDO, OU SEJA, O CONTEÚDO, DEVE SER ABSOLUTO*/
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            left: 50%; /*AFASTADO 50% DA ESQUERDA PARA DIREITA*/
+            top: 50%; /*AFASTADO 50% DE CIMA PARA BAIXO*/
+
+            transform: translate(-50%, -50%); /*POSICIONANDO O CONTÚDO BEM NO CENTRO DO CONTEINER. OS VAORES NEGATIVOS DIZEM A DIREÇÃO (ESQUERDA-50%, PARA BAIXO-50%), SE FOSSE O INVERSO DISSO SERIAM VALORES POSITIVOS*/
+        }
+    </style>
+</head>
+<body>
+    <section id="conteiner">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
