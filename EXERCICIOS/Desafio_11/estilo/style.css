@@ -1,4 +1,4 @@
-@chaset "UTF-8";
+@charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
 
@@ -23,7 +23,7 @@ html, body{
 }
 
 header{
-    background-color: black;
+    background-image: linear-gradient(to bottom,rgb(38, 73, 116), rgb(0, 24, 37));
     color: white;
     text-align: center;
 }
@@ -33,6 +33,7 @@ header > h1{
     font-variant: small-caps; /*PARA DEIXAR "O poema Fagulha" COM AS LETRAS MAIÚCULAS, PORÉM COM AS PRIMEIRAS LETRAS MAIORES PARA DESTACAR*/
     font-family: var(--fonte2);
     font-size: 6.5vw; /*"O poema Fagulha" VAI FICAR 6.5% DA LARGURA DA PÁGINA, AUMENTA DE ACORDO COM O TAMANHO DA TELA*/
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.678);
 }
 
 header > p{
@@ -58,25 +59,43 @@ section{
     font-size: 3.9vw;
 }
 
+section > p{
+    padding-bottom: 1.5em;
+}
+
 section.normal{
     background-color: white;
-    color: black;
+    color: rgb(1, 21, 32);
 }
 
 section.imagem{
     background-color: rgb(51, 51, 51);
     color: white;
+    box-shadow: inset 10px 10px 20px 0px rgba(0, 0, 0, 0.514);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p{ 
     display: inline-block; /*TODO PARÁGRAFO DENTRO DE SEÇÕES COM IMAGENS TERÃO UM FUNDO COM COR*/
     padding: 5px; /*PARA QUE ESSE FUNDO COM COR NÃO FIQUE MUITO GRUDADO NAS LETRAS*/
-    background-color: rgba(0, 0, 0, 0.253);
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01{
+background-image: url(../imagens/ondas.jpg);
+background-position: right center;
+}
+
+section#img02{
+    background-image: url(../imagens/sol.jpg);
 }
 
 footer{
-    background-color: black;
+    background-color: rgb(0, 24, 37);
     color: white;
     text-align: center;
-    padding: 10px;
+    font-size: 1em;
+    padding: 20px;
 }
