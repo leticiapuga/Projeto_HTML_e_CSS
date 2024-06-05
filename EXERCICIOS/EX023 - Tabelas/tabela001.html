@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse; /*PARA NÃO TER ESPAÇO ENTRE AS LINHAS DA TABELA. POR PADRÃO VEM "separate"*/
+            border: 5px solid red;/*PARA CRIAR UMA BORDA A MAIS NA TABELA, CASO SEJA NECESSÁRIO*/
+        }
+
+        tr.linha{
+            background-color: gray;
+        }
+
+        td.dado{
+            background-color: yellow;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 8px;
+
+            text-align: center; 
+            /*
+            ALINHAMENTO HORIZONTAL:
+            PODE VARIAR ENTRE: left(Esquerda), center(Meio), right(Direita)
+            */
+
+            vertical-align: middle; 
+            /*
+            ALINHAMENTO VERTICAL:
+            PODE VARIAR ENTRE: top(Em cima), middle(No meio), bottom(Em baixo)
+            */
+        }
+
+        .numero{
+        text-align: right;
+        }
+        
+        
+
+    </style>
+
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+
+    <!--
+        HIERARQUIA DE TABELAS (Simples) 
+        TABLE = tabela
+            TABLE ROW = linha de tabela
+                TABLE HEADER = cabeçalho de tabela
+                    TABLE DATA = dado de tabela
+    -->            
+
+    <table>
+        <tr class="linha"> <!--O "tr" EQUIVALE A LINHA DE TABELA OU TABLE ROW -->  <!-- Primeira linha -->
+            <td>A1</td> <!-- O "td" EQUIVALE A DADO DE TABELA OU TABLE DATA -->
+            <td>B1</td> 
+            <td>C1</td>
+            
+        </tr>
+        <tr> <!-- Sgunda linha -->
+            <td>A2</td>
+            <td>B2</td>
+            <td class="numero">C2</td>
+        </tr>
+        <tr> <!-- Terceira linha -->
+            <td>A3</td>
+            <td>B3</td>
+            <td class="numero">C3</td>
+        </tr>
+        <tr> <!-- Quarta linha -->
+            <td>A4</td>
+            <td class="dado">B4</td> <!--SOMENTE O B4 FICA MARCADO DE AMARELO -->
+            <td>C4</td>
+        </tr>
+        <!-- OBS: NÃO É OBRIGATÓRIO FECHAR AS TAGS "td" E "tr" -->
+    </table>
+</body>
+</html>
