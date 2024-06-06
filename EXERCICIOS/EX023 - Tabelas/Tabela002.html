@@ -4,6 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+        tbody > tr:nth-child(odd){ /*odd(ímpar) OU 2n-1*/
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even){ /*even(par) OU 2n*/
+            background-color: lightgray;
+        }
+
+        td.num{
+            text-align: right;
+        }
+    </style>
 
 </head>
 <body>
@@ -12,7 +51,150 @@
     <!-- 
         ANATOMIA PARA TABELAS GRANDES:
         
+        TABLE
+            CAPTION           SIGNFICA: LEGENDA OU TÍTULO DA TABELA
+            THEAD
+                TR, TD, TH    O "tr" EQUIVALE A LINHA DE TABELA OU TABLE ROW
+            TBODY
+                TR, TD, TH    O "td" EQUIVALE A DADO DE TABELA OU TABLE DATA
+            TFOOT
+                TR, TD, TH    O "th" EQUIVALE A CABEÇALHO DE TABELA OU TABLE HEADER
+
+        DICA: TUDO QUE FOR TÍTULO SERÁ "th" E TUDO QUE FOR DADO, SERÁ "td"
+
+        O (scope="col") E O (scope="row") NÃO FAZEM ALTERAÇÕES VISUAIS, MAS O NAVEGADOR FICARÁ CIENTE DOS SIGNIFICADOS DELES, ISSO É IMPORTANTE
     -->
+
+    <table>
+
+        <caption>População da Unidades Federativas</caption>
+    
+        <thead> 
+            <tr>
+                <th scope="col">Estado</th><!-- O (scope="col") SIGNIFICA QUE O TÍTULO QUE ELE ESTÁ MARCANDO É O TÍTULO DA COLUNA -->
+                <th scope="col" style="width: 50px;">População</th>
+                O (style="width: 50px;") SERVE PARA DEFINIR, MANUAMENTE, A LARGURA DA COLUNA "População"
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 411 238</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 538 718</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 141 626</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 444 380</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 882 965</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 058 931</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8 794 957</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 121 025</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7 056 495</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6 775 805</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">3 974 687</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">3 941 613</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">3 833 712</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3 658 649</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3 302 729</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3 271 199</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3 127 683</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">2 817 381</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2 757 013</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2 209 558</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1 581 196</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1 511 460</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">830 018</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">733 759</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">636 707</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th> <!--O (scope="row") SIGNIFICA QUE O TÍTULO QUE ELE ESTÁ MARCANDO É O TÍTULO DA LINHA -->
+                <td class="num"><strong>212.826.423</strong></td>
+            </tr>
+        </tfoot>
+    </table>
 
 </body>
 </html>
