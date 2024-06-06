@@ -27,9 +27,18 @@
         }
 
         thead, tfoot{
-            background-color: gray;
+            background-color: #383838;
             color: white;
         }
+
+        /*PARA OS TÍTULOS DAS COLUNAS ACOMPANHAREM A ROLAGEM ATÉ O FIM DA TABELA. ESSA FUNCIONALIDADE É MUITO ÚTIL PARA TABELAS COM MUITAS LINHAS E COLUNAS*/
+        thead > tr > th{
+            position: sticky;
+            top: -1px; /*PARA ESSES TÍTULOS MENCIONADOS FICAREM GRUDADOS NO TOPO DA PÁGINA*/
+            background-color: #383838;
+        }
+
+        /*EFEITO ZEBRADO EM TABELAS:*/
 
         tbody > tr:nth-child(odd){ /*odd(ímpar) OU 2n-1*/
             background-color: white;
@@ -73,7 +82,7 @@
             <tr>
                 <th scope="col">Estado</th><!-- O (scope="col") SIGNIFICA QUE O TÍTULO QUE ELE ESTÁ MARCANDO É O TÍTULO DA COLUNA -->
                 <th scope="col" style="width: 50px;">População</th>
-                O (style="width: 50px;") SERVE PARA DEFINIR, MANUAMENTE, A LARGURA DA COLUNA "População"
+                <!-- O (style="width: 50px;") SERVE PARA DEFINIR, MANUAMENTE, A LARGURA DA COLUNA "População" -->
             </tr>
         </thead>
 
