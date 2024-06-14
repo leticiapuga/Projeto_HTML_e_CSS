@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de foemulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusuario">Usuário: </label>
+            <input type="text" name="usuario" id="iusuario" required minlength="5" maxlength="15" size="11" placeholder="Nome do usuário" autocomplete="username">
+
+            <!-- O "required" SERVE PARA DEFINIR O CAMPO COMO OBRIGATÓRIO, O PRÓPRIO NAVEGADOR JÁ COLOCA UMA MENSAGEM DE AVISO -->
+
+            <!-- O (minlength=" ") SERVE PARA DEFINIR O TAMANHO MÍNIMO DE CARACTERES -->
+
+            <!-- O (maxlength=" ") SERVE PARA DEFINIR O TAMANHO MÁXIMO DE CARACTERES -->
+
+            <!-- O "size" SERVE PARA DEFINIR O TAMANHO DA CAIXA, POR EXEMPLO, SE FOR 10, A CAIXA TERÁ UM TAMANHO QUE APARECERÃO 10 CARATERES, MAS ISSO NÃO O IMPEDE DE COLOCAR MAIS-->
+
+            <!-- O (placeholder="on") SERVE PARA COLOCAR UMA LEGENDA DENTRO DA CAIXA DO FORMULÁRIO -->
+
+            <!-- O "autocomplete" SERVE PARA VC PERMITIR QUE O NAVEGADOR GUARDE OS SEU DADOS, E QUANDO VC FOR DIGITAR NOVAMENTE, ELES JÁ PREENCHERÃO AUTOMATICAMENTE -->
+
+            <!-- O (autocomplete="username") PREENCHERÁ AUTOMATICAMENTE O CAMPO USUÁRIO -->
+        </p>
+
+        <p>
+            <label for="isenha">Senha: </label>
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="10" size="13" placeholder="Mínimo 8 caracteres" autocomplete="current-password"> 
+            <!-- COM O (type="password") A SENHA FICA OCULTA, ISSO É BEM ÚTIL -->
+
+            <!-- O (autocomplete="current-password") PREENCHERÁ AUTOMATICAMENTE O CAMPO SENHA -->
+
+            <!-- O (autocomplete="new-password") PREENCHERÁ AUTOMATICAMENTE O CAMPO NOVA SENHA -->
+        </p>
+
+        <p>
+            <!-- PARA CRIAR O BOTÃO DE ENVIAR, CUIDADO O "type" -->
+            <input type="submit" value="Enviar"> 
+
+            <!-- PARA CRIAR O BOTÃO DE LIMPAR, CUIDADO O "type" -->
+            <input type="reset" value="Limpar">
+
+        </p>
+    </form>
+</body>
+</html>
