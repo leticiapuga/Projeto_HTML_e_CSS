@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulário</title>
+
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Meu primeiro formulário</h1>
+
+    <!-- O "autocomplete="off"" SERVE PARA BLOQUEAR O PREENCHIMENTO RÁPIDO DOS DADOS -->
+    <form action="cadastro.php" autocomplete="off"> <!--O "actoin" É O QUE VAI TE ENCAMINHAR PARA ALGUM LUGAR. ESSE "cadastro.php" SERÁ ENSINADO EM OUTRO MOMENTO -->
+        <p><label for="inome">Nome:</label>
+             <input type="text" name="nome" id="inome"></p>
+
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+
+        <p><input type="submit" value="Enviar"></p>
+
+        <!-- O "name" É MAIS ÚTIL PARA O PHP E PARA O HTML, JÁ O "id" É MAIS ÚTIL PARA O JAVASCRIPT -->
+
+        <!-- NO "for" DENTRO DE "label" TEMOS QUE COLOCAR O "id" QUE DEFINIMOS NOS "input", LOGO, VOCÊ NÃO PODE COLOCAR O MESMO NOME PARA O "name" E PARA O "id" -->
+
+        <!-- O "label" É ESSENCIAL PARA O NAVEGADOR IDENTIFICAR QUE O QUE ESTÁ ESCRITO NO INPUT DO FORMULÁRIO TEM LIGAÇÃO COM A SUA RESPECTIVA CAIXA, PORTANTO É UMA BOA PRÁTICA -->
+
+        <!-- USA-SE O GET PARA DADOS NÃO SENSÍVEIS, COMO NOME, PESO, E INFORMAÇÕES BANAIS. O GET NÃO SUPORTA MAIS DE 3000 BYTES; -->
+
+        <!-- USA-SE O POST PARA DADOS SENSÍVEIS COMO SENHAS E DADOS DE CARTÕES. O POSTE SUPORTA MAIS DE 3000 BYTES; -->
+
+        <!-- O IDEAL PARA SENHAS, DADOS DE CARTÕES E DADOS SENSÍVEIS É O HTTPS (DEVO ME APROFUNDAR DEPOIS, PORQUE É BEM IMPORTANTE); -->
+    </form>
