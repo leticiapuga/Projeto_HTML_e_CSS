@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <form action="cadastro.php" method="get">
+
+        <fieldset>
+            <legend>Sexo</legend>
+
+            <input type="radio" name="sexo" id="ifeminino" checked>
+            <!-- NO FORMULÁRIO DO TIPO: (<input type="radio") APENAS UMA OPÇÃO PODE SER MARCADA, MAS PARA QUE ISSO OCORRA, TODAS AS OPÇÕES DEVEM TER O MESMO "name" -->
+
+            <label for="ifeminino">Feminino</label><br>
+
+            <input type="radio" name="sexo" id="imasculino">
+            <label for="imasculino">Masculino</label>
+
+            <!-- LEMBRE-SE:
+            NOS BOTÕES DE RADIO APENAS UMA OPÇÃO PODE SER MARCADA E AS OPÇÕES DEVEM TER O MESMO NOME -->
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+
+            <input type="checkbox" name="basquete" id="ibasquete"> <label for="ibasquete">Basquete</label> <br>
+
+            <input type="checkbox" name="futebol" id="ifutebol" checked> <label for="ifutebol">Futebol</label> <br>
+            <!-- O "checked" SERVE PARA JÁ MARCAR UMA OPÇÃO AUTOMATICAMENTE, MAS VOCÊ PODE TROCAR DEPOIS -->
+
+            <input type="checkbox" name="natacao" id="inatacao"> <label for="inatacao">Natação</label> <br>
+
+            <input type="checkbox" name="tenis" id="itenis"> <label for="itenis">Tênis</label> <br>
+
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>

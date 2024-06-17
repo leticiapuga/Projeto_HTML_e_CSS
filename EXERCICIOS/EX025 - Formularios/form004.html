@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset> <!-- SERVE PARA CRIAR CAIXAS/DIVISÕES NOS FORMULÁRIOS -->
+
+            <legend>Dados Pessoais</legend> <!-- SERVE PARA LEGENDAR AS FIELDSETS -->
+
+            <p>
+                <label for="inome">Nome: </label>
+                <input type="text" name="nome" id="inome" autocomplete="name" minlength="5" maxlength="20" required placeholder="Nome Completo">
+            </p>
+
+            <p>
+                <label for="iemail">E-mail: </label>
+                <input type="email" name="email" id="iemail" autocomplete="email" placeholder="@gmail.com" required>
+            </p>
+
+            <p>
+                <label for="itelefone">Telefone: </label>
+                <input type="tel" name="telefone" id="itelefone" autocomplete="tel" pattern="/(/d{2}/)/d{4,5}-/d{4}$)" required placeholder="(xx)xxxx-xxxx">
+            </p>
+            
+        </fieldset>
+
+        <!-- ESTUDAR MAIS SOBRE RegEx -->
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+    </form>
+</body>
+</html>
