@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Criando mais um Formulário</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <fieldset>
+            <legend>Novas Funcionalidades Para Formulários</legend>
+
+            <p>
+                <label for="icor">Cor: </label>
+                <input type="color" name="cor" id="icor" value="#00ff00">
+            </p>
+
+            <!-- O (type="color") PERMITE AO USUÁRIO ESCOLHER UMA COR, MAS, SE QUISERMOS, JÁ PODEMOS PRÉ-DEFINIR UMA COR (COM O "value="" ") E O USUÁRIO PODE MODIFICÁ-LA POSTERIORMENTE -->
+
+            <p>
+                <label for="inivel">Nível de Satisfação: </label>
+                <input type="range" name="nivel" id="inivel" min="1" max="10" value="5">
+            </p>
+
+            <!-- O (type="range") PERMITE AO USUÁRIO ESCOLHER UM NÍVEL DE SATISFAÇÃO, TAMBÉM PODEMOS PRÉ-DEFINIR O NÍVEL (COM O "value="" ") -->
+
+            <p>
+                <label for="ifoto">Enviar Foto ou Arquivo: </label>
+                <input type="file" name="foto" id="ifoto">
+            </p>
+
+            <!-- O (type="file") PERMITE AO USUÁRIO ENVIAR UMA FOTO OU UM ARQUIVO, MAS SÓ FUNCIONARÁ SE O MÉTODO DO FORMULÁRIO FOR O POST, DESSA FORMA: method="post", POIS O ARQUIVO/FOTO PODE SER GRANDE E O MÉTODO GET NÃO SUPORTARIA -->
+
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
